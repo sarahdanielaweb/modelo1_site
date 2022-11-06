@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(105, 31, 174);
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: blueviolet;}
+
+header{
+    background-color: rgb(0, 0, 0);
+}
+
+header .logo{
+    margin:0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: blueviolet;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 30px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(197, 196, 196);
+}
+
+header a:hover{
+    color:blueviolet
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 110vh;
+    background-image: url("./imagens/Foto\ de\ Jess\ Bailey\ Designs\ httpswww.pexels.compt-brfotoclipes-de-papel-marrom-1097930.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h2{
+    margin-top: 18%;
+    text-align: center;
+    color: rgb(123, 177, 176);
+}
+
+#hero .socialmedia{
+    padding: 5% 0;
+}
+
+.socialmedia img{
+    padding: 15% 0;
+    width: 40%;
+    }
+
+#sobremim .img-container{
+    background-image: url(imagens/fotoprincipal3.png);
+    background-position: center center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+#sobremim p{
+    text-align: center;
+}
+
+#sobremim h2{
+    text-align: center;
+}
+
+#sobremim .container{
+    display: flex;
+    justify-content: center;
+    padding: 120px 0px;   
+}
+
+#sobremim .texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+#Desenvolvimentos{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Desenvolvimentos .container{
+    padding: 105px 12px;
+}
+
+#Desenvolvimentos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+    color: rgb(123, 177, 176);
+    
+}
+
+#Desenvolvimentos p{
+    display: none;
+}
+
+#Desenvolvimentos .trabalho{
+    background-size: cover;
+    background-position: center center;
+    padding: 40px 40px;
+    margin: 30px ;
+    border-radius: 15px;
+    }
+
+.trabalho:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+    )
+    ,url("./imagens/Foto\ de\ Kampus\ Production\ httpswww.pexels.compt-brfotodescalco-pe-descalco-olhos-fechados-exercicio-6298316.jpg");
+}
+
+.trabalho:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+    )
+    ,url("./imagens/Foto\ de\ Mikechie\ Esparagoza\ httpswww.pexels.compt-brfotofoto-de-uma-citacao-de-cartolina-variada-pendurada-na-parede-1742370.jpg");
+}
+
+.trabalho:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+    )
+    ,url("./imagens/Foto\ de\ Pixabay\ httpswww.pexels.compt-brfotolampada-transparente-355948.jpg");
+}
+
+#soft-skills .container{
+    text-align: center;
+    padding: 120px 12px;
+}
+
+#soft-skills h2{
+    color: blueviolet;
+}
+
+#soft-skills li{
+    margin: 16 px 0px;
+    font-weight: bold;
+    color: azure;
+    font-size: 25px;
+    padding: 10px 0;
+    }
+
+#soft-skills{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;       
+        background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.1)
+        )
+    ,url("imagens/imagem-fundo.jpg");
+        height: 100vh;    
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+
+
+#contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;       
+    background-color: rgb(87, 249, 233);
+    height: 80vh;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 10px;
+}
+
+
+form{
+    margin: auto;
+    display: flex;
+    flex-flow: column;
+    background-color: white;
+    width: 40%;
+    height: 80%;
+    padding: 10px 0;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0,0,0,0.8) 0px 0px 50px;
+    border-radius: 10px;
+}
+
+.form:hover{
+    color:blueviolet
+}
+
+input, textarea {
+    border: none;
+    resize: none;
+    outline: none;
+    padding: 8px;
+    width: 80%;
+    margin:auto;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+input:focus, textarea:focus{
+    border-bottom-color:aquamarine;
+}
+
+.forma button{
+    margin: 2% 0%;
+    font-size: 12px;
+    border-radius: 2px;
+    border: none;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    color: rgb(0, 0, 0);
+    background-color: rgb(222, 222, 222);
+}
+
+.forma button:hover{
+    color:blueviolet
+}
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0px;
+    padding: 20px 0px;
+    color: rgb(100,100,100);
+    }
+
+footer .container{
+    display: inline;
+    flex-direction:row;
+    text-align: center;
+}
+
+.socialmedia a{
+    top: 50%;
+    max-width: 20%;
+
+}
+
+
+@media (min-width: 720px){
+header{
+    position: fixed; 
+    width: 100%;
+}
+    
+header .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+header nav{
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 50px;
+}
+
+#Desenvolvimentos .sub-desenvolvimentos{
+    display: flex;
+    justify-content: center;
+}
+
+
+}
