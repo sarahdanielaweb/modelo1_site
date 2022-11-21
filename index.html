@@ -84,13 +84,78 @@
 
 <section id="contato"> 
     <div class="contcontato"></div>
-    <form>
-        <h2>Contato</h2
-            <input type="text" value="Nome" placeholder="Nome">
-            <input type="text" value="Nome" placeholder="Nome">
-            <input type="text" value="E-mail" placeholder="Email">
-            <textarea >Mensagem</textarea>
-            <div class="forma"><button>Enviar</button></div>
+    <form autocomplete="off">
+
+        <small id="textForm"></small>
+        
+        <h2>Contato</h2>
+
+       
+
+        <div>
+            <label for="nome">*Nome: </label>
+            <input type="text" id="nome" placeholder="Digite seu nome" >
+            <small id="textNome"></small>                   
+        </div>
+
+        <div>
+            <label for="email">*E-mail: </label>
+            <input type="text" id="email" placeholder="Digite seu e-mail">           
+            <small id="textEmail"></small>  
+        </div>
+
+        
+        <textarea class="inputs" name="descrição" id="descrição" cols="10" rows="5" placeholder="Digite o seu comentário..."></textarea>
+
+
+       
+        <div class="boxselect">
+            <p>Sexo:</p>
+        <div>
+            <input type="radio" id="m" value="m" name="sexo">
+            <label for="m">Masculino</label>
+        </div>
+        
+
+        <div>
+            <input type="radio" id="f" value="f" name="sexo">
+            <label for="f">Femenino</label>
+        </div>
+
+        <div>
+            <input type="radio" id="o" value="o" name="sexo">
+            <label for="o">Outro</label>
+        </div>
+        </div>
+           
+
+        
+            <div class="boxselect">
+                <p>Temas de interés:</p>
+             <div>   
+                <input type="checkbox" id="html" value="html" name="experiencias">
+                <label for="html">Html</label>
+            </div>
+
+
+            <div>
+                <input type="checkbox" id="css" value="css" name="experiencias">
+                <label for="css">CSS</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="js" value="js" name="experiencias">
+                <label for="js">JavaScript</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="php" value="php" name="experiencias">
+                <label for="php">Outros</label>
+            </div>
+            </div>
+       
+            <button type="submit">Enviar</button>
+            
     </form>
     
 </section>
@@ -99,11 +164,9 @@
 <footer>
     <div class="container">
         <p>&copy; Sarah.Web 2022</p>
-        
-    </div><!--div container corporate-->
-    
-
+    </div><!--div container corporate-->   
 </footer>
 
+<script src="main.js"></script>
 </body>
 </html>
